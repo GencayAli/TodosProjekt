@@ -1,0 +1,26 @@
+{
+  "name": "todomvc-backend",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server",
+    "start": "node server",
+    "build": "",
+    "lint": "eslint --fix",
+    "format": "prettier . --write"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@types/express": "^4.17.21",
+    "eslint": "^9.10.0",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3"
+  },
+  "packageManager": "npm@10.8.1"
+}
