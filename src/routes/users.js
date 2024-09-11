@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
   try {
     db.all('SELECT * FROM todos', [], (err, rows) => {
       if (err) throw new Error('Fehler in der Datenbank');
-      const todos = rows.map(CompletedToBoolean); // Todos in ein Array umwandeln
+      const todos = rows.map(CompletedToBoolean); 
       res.json(todos);
     });
   } catch (err) {
